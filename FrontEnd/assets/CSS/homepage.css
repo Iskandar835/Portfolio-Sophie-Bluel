@@ -1,0 +1,354 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/** end reset css**/
+
+
+/****  GENERAL  ****/
+
+body {
+	max-width: 1140px;
+	margin: auto; 
+	font-family: 'Work Sans';
+	font-size: 14px;
+	color: #3D3D3D;
+	background-color:#FFFEF8;
+	overflow-x: hidden;
+}
+
+h1{
+	display: flex;
+	flex-direction: column;
+	font-family: 'Syne';
+	font-size: 22px;
+	font-weight: 800;
+	color: #B1663C
+}
+
+h1 > span {
+	font-family: 'Work Sans';
+	font-size: 10px;
+	letter-spacing: 0.1em;
+}
+
+h2{
+	font-family: 'Syne';
+	font-weight: 700;
+	font-size: 30px;
+	color: #1D6154
+}
+
+nav ul {
+	display: flex;
+	align-items: center;
+	list-style-type: none;
+}
+
+nav li {
+	padding: 0 10px;
+	font-size: 16px;
+}
+
+li:hover {
+	font-weight: 700;
+}
+
+a {
+	text-decoration: none;
+	color: #000000;
+}
+
+i {
+	color: #000000;
+}
+
+input[type="text"],
+input[type="email"],
+select {
+	height: 50px;
+	font-family: 'Work Sans';
+	font-size: 14px;
+	border: none;
+	outline: none;
+	box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.09);
+}
+
+.btn {
+	height: 36px;
+	margin : 40px 100px 45px 100px;
+	font-family: 'Syne';
+	font-weight: 700;
+	color: white;
+	text-align: center;
+	background-color: #1D6154;
+	border: none;
+	border-radius: 60px;
+	cursor: pointer;
+	transition: all 200ms ease-in;
+}
+
+.btn:hover {
+	background-color: #0E2F28;
+}
+
+/****  HEADER  ****/
+
+header {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 50px;
+}
+
+.header-nav ul {
+	gap: 30px;
+}
+
+/** see javaScript loggedin.js files, innerText change the color  **/
+
+#login {
+	color:#000000;
+	cursor: pointer;
+}
+
+/***************************************************************/
+
+.header-nav img {
+	width: 22px;
+	height: 22px;
+}
+
+
+/****  INTRODUCTION SECTION  ****/
+
+#introduction {
+	display: flex;
+	align-items: center;
+	margin-top: 150px;
+	padding: 0 0 0 95px;
+}
+
+#introduction figure {
+	flex: 1
+}
+
+#introduction img {
+	display: block;
+	margin: auto;
+	width: 474px;
+	height: 355px;
+}
+
+#introduction article {
+	flex: 1;
+	padding: 0 90px 0 70px;
+	text-wrap: wrap;
+}
+
+#introduction h2 {
+	margin-bottom: 16px;
+}
+
+#introduction p {
+	margin-bottom: 16px;
+}
+
+
+/****  PORTFOLIO  ****/
+
+#portfolio {
+	margin: 140px 0 60px 0;
+	padding: 0 95px;
+}
+
+#portfolio h2 {
+	text-align: center;
+}
+
+/** see javaScript "loggedin.js" file **/
+
+.h2-and-modifier {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 95px;
+}
+
+.h2-and-modifier h2 {
+	margin: 0 30px 0 120px;
+}
+
+.h2-and-modifier p {
+	margin-top: 8px;
+	font-weight: 600;
+	color: #000000;
+	cursor: pointer;
+}
+
+.h2-and-modifier i {
+	margin-right: 10px;
+	font-size: 16px;
+}
+
+/***************************************/
+
+.all-filters {
+	display: flex;
+	justify-content: center;
+	margin: 55px 0 50px 0;
+	gap: 10px;
+}
+
+.small-filter {
+	width: 100px;
+}
+
+.filter {
+	padding: 9px 15px;
+	font-family: 'syne';
+	font-size: 16px;
+	font-weight: 700;
+	color: #1D6154;
+	background-color: #FFFEF8;
+	border: 1px solid #1D6154;
+	border-radius: 60px;
+	cursor: pointer;
+	transition: all 200ms ease-in;
+}
+
+.filter:hover {
+	color: #FFFEF8;
+	background-color: #1D6154;
+}
+
+.gallery {
+	display: grid;
+	width: 100%;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-column-gap: 20px;
+	grid-row-gap: 20px;
+}
+
+/** see javaScript "works.js" file  **/
+
+.work-div {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.work-div img {
+	width: 100%;
+} 
+
+.work-title {
+	font-size: 13px;
+}
+
+/*************************************/
+
+
+/****  CONTACT SECTION  ****/
+
+#contact {
+	margin: 0 380px;
+}
+
+#contact > * {
+	text-align: center;
+}
+
+#contact h2{
+	margin-bottom: 15px;
+}
+
+#contact p {
+	font-size: 16px;
+}
+
+#contact form {
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+}
+
+#contact label {
+	margin: 35px 0 15px 0;
+	font-weight: 600;
+}
+
+#contact textarea {
+	border: none;
+	box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.09);
+	resize: none;
+}
+
+.btn-envoyer {
+	width: 180px;
+}
+
+
+/****  FOOTER  ****/
+
+footer {
+	width: 100vw;
+	height: 60px;
+	margin-right: calc(-50vw + 50%); 
+	margin-left: calc(-50vw + 50%);
+	background-color: white;
+}
+
+footer nav ul {
+	display: flex;
+	justify-content: flex-end;
+	padding: 25px 100px 0 100px;
+}
+
+footer li {
+	font-size: 14px;
+}
+
+
