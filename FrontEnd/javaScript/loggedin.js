@@ -4,9 +4,12 @@ const btnLogout = document.getElementById("login");
 //** this function sets up the elements once connected **
 function userLoggedIn() {
   const isLoggedIn = localStorage.getItem("isLoggedIn");
+  const editMode = document.querySelector(".edit-mode")
   const addModifier = document.getElementById("section-title");
   const filtersNone = document.querySelector(".all-filters");
   if (isLoggedIn === "true") {
+    editMode.style.display = "flex";
+
     btnLogout.innerText = "logout";
 
     const iconModifier = document.createElement("i");
